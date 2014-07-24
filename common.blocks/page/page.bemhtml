@@ -1,0 +1,4 @@
+block('page').def().match(!this.ctx.favicon)(function() {
+    this.ctx.favicon='../../common.blocks/page/_favicon/page_favicon_bender.ico';
+    applyNext();
+})

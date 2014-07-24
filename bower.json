@@ -1,0 +1,13 @@
+{
+    "name": "hypnotoad",
+    "version": "0.0.0",
+    "dependencies": {
+        "bem-core": "v2.3.0",
+        "bem-components": "08e77a853d351277f23c6925cf32d3fa759db80b"
+    },
+    "ignore": [
+        "node_modules",
+        "libs",
+        "bundles"
+    ]
+}

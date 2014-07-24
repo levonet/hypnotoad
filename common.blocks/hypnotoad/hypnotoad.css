@@ -1,0 +1,9 @@
+.hypnotoad {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:500px;
+    height:350px;
+    margin-left: -250px;
+    margin-top: -175px;
+}

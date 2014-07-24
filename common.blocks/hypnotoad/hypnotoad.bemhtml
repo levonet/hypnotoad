@@ -1,0 +1,8 @@
+block('hypnotoad').content()({
+        block: 'image',
+        attrs: {
+            alt: 'Hypnotoad',
+            src: '../../common.blocks/hypnotoad/hypnotoad.gif'
+        }
+    }
+)
