@@ -1,9 +1,10 @@
 .bem/tmp
 _/
-freeze/
 libs/
 node_modules/
 npm-debug.log
+*~
+*.diff
 
 desktop.bundles/*/*.*
 !desktop.bundles/*/*.bemjson.js
