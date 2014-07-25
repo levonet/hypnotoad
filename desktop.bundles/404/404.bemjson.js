@@ -1,6 +1,7 @@
 ({
     block: 'page',
     title: '404 Not Found',
+    mods: { error: 'on' },
     content: [
        {
            block: 'error',
