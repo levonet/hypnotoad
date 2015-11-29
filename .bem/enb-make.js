@@ -5,6 +5,8 @@ var techs = {
     bemdecl         : require('enb/techs/bemdecl-from-bemjson'),
     css             : require('enb-stylus/techs/css-stylus'),
     autoprefixer    : require('enb-autoprefixer/techs/css-autoprefixer'),
+    js              : require('enb-diverse-js/techs/browser-js'),
+    prepend         : require('enb-modules/techs/prepend-modules'),
     bemhtml         : require('enb-bemxjst/techs/bemhtml'),
     html            : require('enb/techs/html-from-bemjson'),
     borschik        : require('enb-borschik/techs/borschik'),
@@ -25,12 +27,16 @@ module.exports = function(config) {
             use('autoprefixer', { sourceTarget : '?.noprefix.css', destTarget : '?.css', browserSupport : getDesktopBrowsers() }),
             use('borschik', { sourceTarget: '?.css', destTarget: '?.min.css', minify: true, freeze: true }),
 
+            use('js', { target: '?.browser.js' }),
+            use('prepend', { source: '?.browser.js', target: '?.js' }),
+            use('borschik', { sourceTarget: '?.js', destTarget: '?.min.js', minify: true, freeze: true }),
+
             use('bemhtml', { devMode: false }),
             use('html', { destTarget: '?.src.html' }),
             use('borschik', { sourceTarget: '?.src.html', destTarget: '?.html', minify: true, freeze: true }),
 
         ]);
-        nodeConfig.addTargets(['?.min.css', '?.html']);
+        nodeConfig.addTargets(['?.min.css', '?.min.js', '?.html']);
     });
 
 };
