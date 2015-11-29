@@ -1,3 +1,5 @@
-[{
-    shouldDeps : { block : 'image' }
-}]
+({
+    mustDeps: [
+        { block: 'i-ua', elem: 'svg' }
+    ]
+})
