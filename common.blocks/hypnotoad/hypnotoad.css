@@ -7,3 +7,11 @@
     margin-left: -250px;
     margin-top: -175px;
 }
+
+.ua_svg_yes .hypnotoad {
+    background: url(hypnotoad.svg) no-repeat;
+}
+
+.ua_svg_no .hypnotoad {
+    background: url(hypnotoad.gif) no-repeat;
+}
