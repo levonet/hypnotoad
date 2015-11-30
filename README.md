@@ -1,4 +1,5 @@
 ## hypnotoad
+[![Build Status](https://travis-ci.org/levonet/hypnotoad.svg)](https://travis-ci.org/levonet/hypnotoad)
 
 ### Installation
 
