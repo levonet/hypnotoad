@@ -20,5 +20,11 @@
         "enb-autoprefixer": "~0.1.1",
         "enb-diverse-js": "^0.1.0",
         "bower": "~1.3.5"
+    },
+    "scripts": {
+        "start": "enb server",
+        "deps": "bower i",
+        "build": "npm run deps && enb make",
+        "test": "npm run build"
     }
 }
