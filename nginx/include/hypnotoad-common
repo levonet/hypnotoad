@@ -1,0 +1,23 @@
+error_page 404 /404.html;
+location  /404.html {
+    internal;
+}
+
+rewrite ^/([\w-]+.html)?(\?.*)?$ /$ua_device.pages/$1$2 last;
+
+location /_/ {
+    gzip_static on;
+}
+
+location = /favicon.ico {
+    alias /var/www/hypnotoad/_/hR304a735Rwik8KxZH8i2ybg1JY.ico;
+    access_log off;
+}
+
+location /ping {
+    return 200;
+}
+
+location /hostname {
+    return 200 $hostname;
+}
