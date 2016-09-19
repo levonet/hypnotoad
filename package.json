@@ -25,6 +25,7 @@
         "start": "enb server",
         "deps": "bower i",
         "build": "npm run deps && enb make",
-        "test": "npm run build"
+        "test": "npm run build",
+        "deploy": "./scripts/deploy.sh"
     }
 }
