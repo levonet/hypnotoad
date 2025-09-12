@@ -6,8 +6,10 @@
 ```
 > git clone https://github.com/levonet/hypnotoad.git
 > cd hypnotoad
+> n 8
 > npm i
 > ./node_modules/.bin/bower i
+> ./node_modules/.bin/enb make
 ```
 
 ### Run development server

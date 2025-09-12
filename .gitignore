@@ -3,6 +3,7 @@ _/
 libs/
 node_modules/
 npm-debug.log
+.DS_Store
 *~
 *.diff
 

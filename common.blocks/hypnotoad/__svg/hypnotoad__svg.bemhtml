@@ -1,0 +1,7 @@
+block('hypnotoad').elem('svg')(
+    tag()('source'),
+    attrs()({
+        type: 'image/svg+xml',
+        srcset: '../../common.blocks/hypnotoad/hypnotoad.svg'
+    })
+)
