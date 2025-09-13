@@ -5,7 +5,7 @@ var techs = {
     bemdecl         : require('enb/techs/bemdecl-from-bemjson'),
     css             : require('enb-stylus/techs/css-stylus'),
     autoprefixer    : require('enb-autoprefixer/techs/css-autoprefixer'),
-    js              : require('enb-diverse-js/techs/browser-js'),
+    js              : require('enb-js/techs/browser-js'),
     prepend         : require('enb-modules/techs/prepend-modules'),
     bemhtml         : require('enb-bemxjst/techs/bemhtml'),
     html            : require('enb/techs/html-from-bemjson'),
@@ -63,8 +63,8 @@ function use(tech, params) {
 
 function getDesktopBrowsers() {
     return [
+        '> 1%',
         'last 2 versions',
-        'ie 10',
-        'ff 24',
+        'Firefox ESR',
     ];
 }

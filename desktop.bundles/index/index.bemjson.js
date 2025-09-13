@@ -10,8 +10,8 @@
     content: [
         {
             block: 'hypnotoad',
-        }, {
-            block: 'metrika'
+        // }, {
+        //     block: 'metrika'
         }
     ]
 })

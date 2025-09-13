@@ -7,6 +7,7 @@
         "url": "git://github.com/levonet/hypnotoad.git"
     },
     "devDependencies": {
+        "autoprefixer-core": "5.1.11",
         "borschik": "~1.0.5",
         "bower": "~1.7.10",
         "enb": "^0.17.2",

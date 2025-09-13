@@ -7,10 +7,10 @@ BUNDLE_DIRS="./desktop.bundles"
 
 case "${YENV}" in
     "production")
-        WWW_ROOT="/var/www/hypnotoad"
+        WWW_ROOT="/opt/nginx/www/hypnotoad"
         ;;
     "testing")
-        WWW_ROOT="/var/www/hypnotoad-beta"
+        WWW_ROOT="/opt/nginx/www/hypnotoad-beta"
         ;;
     *)
         echo "Set environment variable YENV=<production|testing>"
